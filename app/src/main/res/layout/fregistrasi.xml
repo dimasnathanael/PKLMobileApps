@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fRegistrasi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <RelativeLayout
+        android:id="@+id/fRegistrasiRL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/fRegistrasiLL"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="Silahkan mengisi data pribadi Anda dengan lengkap dan benar!"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewHeader"
+                android:layout_marginTop="20dp"
+                android:text="Email:"
+                android:textStyle="italic"
+                android:textSize="@dimen/textview_size"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewEmail"
+                android:ems="20"
+                android:hint="Masukkan email Anda di sini!"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/textViewFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editTextEmail"
+                android:layout_marginTop="17dp"
+                android:text="Nama Lengkap:"
+                android:textStyle="italic"
+                android:textSize="@dimen/textview_size"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewFullName"
+                android:ems="20"
+                android:hint="Masukkan nama lengkap Anda di sini!"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewPlaceAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editTextFullName"
+                android:layout_marginTop="17dp"
+                android:text="Alamat Lapak:"
+                android:textStyle="italic"
+                android:textSize="@dimen/textview_size"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextPlaceAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewPlaceAddress"
+                android:ems="20"
+                android:hint="Masukkan alamat lapak Anda di sini!"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textViewPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editTextPlaceAddress"
+                android:layout_marginTop="17dp"
+                android:text="Nomor HP:"
+                android:textStyle="italic"
+                android:textSize="@dimen/textview_size"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewPhoneNumber"
+                android:ems="20"
+                android:hint="Masukkan nomor HP Anda di sini!"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editTextPhoneNumber"
+                android:layout_marginTop="17dp"
+                android:text="Jenis Kelamin:"
+                android:textStyle="italic"
+                android:textSize="@dimen/textview_size"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:background="@color/colorGrey"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:layout_below="@+id/textViewGender" />
+
+            <TextView
+                android:id="@+id/textViewDateBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/genderSpinner"
+                android:layout_marginTop="19dp"
+                android:text="Tgl Lahir:"
+                android:textStyle="italic"
+                android:textSize="@dimen/textview_size"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/buttonDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="setDate"
+                android:text="Atur Tanggal" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonDatePicker"
+                android:layout_toLeftOf="@+id/buttonDatePicker"
+                android:text="Tanggal Dipilih:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/buttonDatePicker"
+                android:layout_below="@+id/textViewTanggal"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewBestProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/datePickerDateBirth"
+                android:layout_marginTop="17dp"
+                android:text="Produk Unggulan:"
+                android:textStyle="italic"
+                android:textSize="@dimen/textview_size"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextBestProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewBestProduct"
+                android:ems="17"
+                android:hint="Masukkan produk unggulan Anda di sini!"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/buttonCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Daftar"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:onClick="doCreate"
+                android:layout_below="@+id/editTextBestProduct"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.03" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

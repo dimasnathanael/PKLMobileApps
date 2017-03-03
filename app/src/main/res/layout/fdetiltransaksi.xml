@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".transaksi.DetilTransaksi" >
+
+    <TextView
+        android:id="@+id/textViewProdyctname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/textview_size"
+        android:text="Nama Produk:" />
+
+    <TextView
+        android:id="@+id/textViewProductNameSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewProdyctname"
+        android:layout_below="@+id/textViewProdyctname"
+        android:textSize="@dimen/textview_size"/>
+
+    <TextView
+        android:id="@+id/textViewQtySell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewProductNameSelect"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/textview_size"
+        android:text="Kuantitas Jual:" />
+
+    <TextView
+        android:id="@+id/textViewQtySellSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewQtySell"
+        android:layout_below="@+id/textViewQtySell"
+        android:textSize="@dimen/textview_size" />
+
+    <TextView
+        android:id="@+id/textViewDateTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewQtySellSelect"
+        android:layout_marginTop="19dp"
+        android:text="Tanggal Transaksi:"
+        android:textStyle="bold"
+        android:textSize="@dimen/textview_size" />
+
+    <TextView
+        android:id="@+id/textViewSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDateTransaction"
+        android:textSize="@dimen/textview_size" />
+
+    <Button
+        android:id="@+id/buttonBackToCatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSelectDate"
+        android:layout_marginTop="34dp"
+        android:text="Back" />
+
+</RelativeLayout>

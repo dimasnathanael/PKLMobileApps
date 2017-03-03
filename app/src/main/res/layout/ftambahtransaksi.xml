@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".transaksi.TambahTransaksi" >
+
+    <TextView
+        android:id="@+id/textViewProdyctname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/textview_size"
+        android:text="Nama Produk:" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/editTextProductName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/textViewProdyctname"-->
+        <!--android:layout_below="@+id/textViewProdyctname"-->
+        <!--android:hint="Masukkan nama produk di sini!" />-->
+
+    <!-- Spinner Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerProductItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewProdyctname"
+        android:prompt="@string/spinner_title"
+        />
+
+    <TextView
+        android:id="@+id/textViewQtySell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewProdyctname"
+        android:layout_below="@+id/spinnerProductItem"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/textview_size"
+        android:text="Kuantitas Jual:" />
+
+    <EditText
+        android:id="@+id/editTextQtySell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewQtySell"
+        android:layout_below="@+id/textViewQtySell"
+        android:hint="Masukkan kuantitas produk di sini!" />
+
+    <TextView
+        android:id="@+id/textViewDateTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextQtySell"
+        android:layout_marginTop="19dp"
+        android:text="Tanggal Transaksi:"
+        android:textStyle="bold"
+        android:textSize="@dimen/textview_size" />
+
+    <Button
+        android:id="@+id/buttonDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDateTransaction"
+        android:onClick="setDate"
+        android:text="Atur Tanggal" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonDatePicker"
+        android:text="Tanggal Dipilih:"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDate"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonSaveTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Simpan" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSaveTransaction"
+        android:layout_alignBottom="@+id/buttonSaveTransaction"
+        android:layout_toRightOf="@+id/buttonSaveTransaction"
+        android:text="Kembali" />
+</RelativeLayout>

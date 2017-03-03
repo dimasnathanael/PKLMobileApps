@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nathanael.ui">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash screen -->
+        <activity
+            android:name="com.nathanael.ui.splashscreen.Splashscreen"
+            android:label="@string/app_name"
+            android:theme="@style/Splashscreen"
+            android:screenOrientation="portrait"
+            android:noHistory="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main activity -->
+        <activity
+            android:name="com.nathanael.ui.Login"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.nathanael.ui.Menu" />
+        <activity android:name="com.nathanael.ui.Registrasi" />
+        <activity android:name="com.nathanael.ui.setting.Katalog" />
+        <activity android:name="com.nathanael.ui.produk.KatalogProduk" />
+        <activity android:name="com.nathanael.ui.produk.TambahProduk" />
+        <activity android:name="com.nathanael.ui.produk.SyncProduk" />
+        <activity android:name="com.nathanael.ui.produk.DetilProduk" />
+        <activity android:name="com.nathanael.ui.produk.EditProduk" />
+        <activity android:name="com.nathanael.ui.transaksi.KatalogTransaksi" />
+        <activity android:name="com.nathanael.ui.transaksi.TambahTransaksi" />
+        <activity android:name="com.nathanael.ui.transaksi.DetilTransaksi" />
+        <activity android:name="com.nathanael.ui.transaksi.EditTransaksi" />
+        <activity android:name="com.nathanael.ui.register.KatalogUser" />
+        <activity android:name="com.nathanael.ui.register.DetilUser" />
+        <activity android:name="com.nathanael.ui.rekap.Rekap" />
+    </application>
+</manifest>
